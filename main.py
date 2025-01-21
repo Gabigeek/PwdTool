@@ -19,8 +19,10 @@ def get_args():
 args = get_args()
 match args.tool:
     case 'passwordTest':
-        pwd = input("saisissez un mot de passe à tester :")
-        print("L'entropie du mot de passe est : ", Password.check_entropy(pwd))
+        pwd = Password(input("saisissez un mot de passe à tester : "))
+        print("L'entropie du mot de passe est : ", pwd.entropy)
+        print("La force du mot de passe est : ", pwd.power)
+
 
     case 'passwordGen':
         print('passwordGen demandé')
