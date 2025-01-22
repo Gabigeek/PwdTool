@@ -44,3 +44,11 @@ Le mot de passe est :  JZ!5d"hxvw9%
 L'entropie du mot de passe est :  43.01955000865387
 La force du mot de passe est :  Ok
 ```
+
+### 3. Génération de passphrase (`PassphraseGen`)
+```bash
+$ python main.py PassphraseGen
+
+# Sortie :
+La passphrase est :  slurp petal museum dislike provided bloated
+```
