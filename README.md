@@ -21,7 +21,7 @@ pip install requests
 
 ### I. Tester un mot de passe existant (`PasswordTest`)
 ```bash
-$ python main.py PasswordTest
+$ python3 main.py PasswordTest
 saisissez un mot de passe à tester : abc123
 ```
 #### Sortie :
@@ -32,7 +32,7 @@ La force du mot de passe est :  Very_weak
 
 ### II. Génération de mot de passe (`PasswordGen`)
 ```bash
-$ python main.py PasswordGen
+$ python3 main.py PasswordGen
 Longueur du mot de passe : 12
 Nombre de minuscules minimum : 4
 Nombre de majuscules minimum : 2
@@ -48,7 +48,7 @@ La force du mot de passe est :  Ok
 
 ### III. Génération de passphrase (`PassphraseGen`)
 ```bash
-$ python main.py PassphraseGen
+$ python3 main.py PassphraseGen
 ```
 #### Sortie :
 ```
@@ -60,5 +60,5 @@ La passphrase est :  slurp petal museum dislike provided bloated
 Exécutez la commande suivante pour vérifier le bon fonctionnement des calculs d'entropie et de classification des mots de passe :
 
 ```bash
-python tests.py
+python3 tests.py
 ```
