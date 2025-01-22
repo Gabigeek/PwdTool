@@ -40,7 +40,7 @@ match args.tool:
         
     case 'PassphraseGen':
         Generated_passphrase = Passphrase()
-        print("La passphrase générée est : ", " ".join(Generated_passphrase.wordlist))
-
+        Generated_passphrase.get_passphrase()
+        
     case _:
         print('Commande inconnue, merci de préciser l\'outil souhaité : PasswordTest, PasswordGen or PassphraseGen')

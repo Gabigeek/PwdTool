@@ -8,8 +8,7 @@ class Passphrase:
         url = "https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt"
         response = requests.get(url, timeout=2)
         if response.status_code != 200:
-            err_msg = "Error while grabbing EFF password list"
-            print(err_msg)
+            raise ValueError("Error while grabbing EFF password list")
         words = response.text.splitlines()
         word_dict = {}
         for l in words:
@@ -28,6 +27,6 @@ class Passphrase:
         
             dice_result = ''.join(map(str, dice_roll))
             self.wordlist.append(word_dict[dice_result])
-        
-        
-        
+
+    def get_passphrase(self):
+        print("La passphrase est : ", ' '.join(self.wordlist))

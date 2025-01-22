@@ -65,4 +65,4 @@ class Password:
         random.shuffle(password_list)
     
         # Conversion de la liste en chaîne de caractères
-        return ''.join(password_list)
+        return "".join(password_list)
