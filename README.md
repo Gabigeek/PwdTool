@@ -52,3 +52,11 @@ $ python main.py PassphraseGen
 # Sortie :
 La passphrase est :  slurp petal museum dislike provided bloated
 ```
+## Exécution des tests unitaires
+
+### Comment lancer les tests
+Exécutez la commande suivante pour vérifier le bon fonctionnement des calculs d'entropie et de classification des mots de passe :
+
+```bash
+python tests.py
+```
