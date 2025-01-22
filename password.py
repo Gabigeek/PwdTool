@@ -35,7 +35,7 @@ class Password:
         elif self.entropy >= 128:
             return "Very_strong"
         else:
-            return "Entropie invalide"
+            raise ValueError("Mauvaise entropie")
         
     def get_password_strength(self):
         print("La force du mot de passe est : ", self.power)
