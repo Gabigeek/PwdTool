@@ -41,7 +41,7 @@ Nombre de chiffres minimum : 2
 Nombre de caractères spéciaux minimum : 1
 ```
 
-# Sortie :
+#### Sortie :
 
 ```
 Le mot de passe est :  JZ!5d"hxvw9%
@@ -53,7 +53,7 @@ La force du mot de passe est :  Ok
 ```bash
 $ python main.py PassphraseGen
 ```
-# Sortie :
+#### Sortie :
 
 ```
 La passphrase est :  slurp petal museum dislike provided bloated
