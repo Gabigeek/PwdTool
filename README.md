@@ -24,7 +24,7 @@ pip install requests
 $ python main.py PasswordTest
 saisissez un mot de passe à tester : abc123
 ```
-# Sortie :
+#### Sortie :
 
 ```
 L'entropie du mot de passe est :  15.509775004326936
