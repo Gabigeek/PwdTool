@@ -24,7 +24,6 @@ pip install requests
 **Exemple 1** - Mot de passe faible :  
 ```bash
 $ python main.py PasswordTest
-```
 saisissez un mot de passe à tester : abc123
 
 # Sortie :
