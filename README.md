@@ -20,17 +20,17 @@ pip install requests
 ## Exemples d'utilisation détaillés
 
 ### 1. Tester un mot de passe existant (`PasswordTest`)
-```bash
+```
 $ python main.py PasswordTest
 saisissez un mot de passe à tester : abc123
 
 # Sortie :
-"L'entropie du mot de passe est :  15.509775004326936
-La force du mot de passe est :  Very_weak"
+L'entropie du mot de passe est :  15.509775004326936
+La force du mot de passe est :  Very_weak
 ```
 
 ### 2. Génération de mot de passe (`PasswordGen`)
-```bash
+```
 $ python main.py PasswordGen
 Longueur du mot de passe : 12
 Nombre de minuscules minimum : 4
@@ -46,7 +46,7 @@ La force du mot de passe est :  Ok
 ```
 
 ### 3. Génération de passphrase (`PassphraseGen`)
-```bash
+```
 $ python main.py PassphraseGen
 
 # Sortie :
@@ -57,6 +57,6 @@ La passphrase est :  slurp petal museum dislike provided bloated
 ### Comment lancer les tests
 Exécutez la commande suivante pour vérifier le bon fonctionnement des calculs d'entropie et de classification des mots de passe :
 
-```bash
+```
 python tests.py
 ```
