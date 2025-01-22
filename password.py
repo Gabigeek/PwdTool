@@ -43,26 +43,19 @@ class Password:
     def generate_password(length, min_lowercase, min_uppercase, min_digits, min_special):
         # Liste contenant tous les caractères possibles
         all_characters = string.ascii_letters + string.digits + string.punctuation
-    
-        # Liste pour stocker les caractères du mot de passe
         password_list = []
     
-         # Ajout des caractères obligatoires
+        # Ajout des caractères obligatoires
         password_list.extend(random.choices(string.ascii_lowercase, k=min_lowercase))
         password_list.extend(random.choices(string.ascii_uppercase, k=min_uppercase))
         password_list.extend(random.choices(string.digits, k=min_digits))
         password_list.extend(random.choices(string.punctuation, k=min_special))
     
-        # Vérification si la longueur minimale est atteinte
         if len(password_list) > length:
             raise ValueError("La somme des caractères minimums dépasse la longueur totale")
     
         # Complétion avec des caractères aléatoires
         remaining_length = length - len(password_list)
         password_list.extend(random.choices(all_characters, k=remaining_length))
-    
-        # Mélange des caractères
         random.shuffle(password_list)
-    
-        # Conversion de la liste en chaîne de caractères
         return "".join(password_list)
