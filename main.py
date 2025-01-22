@@ -1,4 +1,5 @@
 from password import *
+from passphrase import *
 import argparse
 import sys
 
@@ -8,17 +9,17 @@ def get_args():
         description='Outil de gestion de mot de passe / passphrase',
         add_help=True)
     
-    parser.add_argument('tool', type=str, help='Précisez l\'outil souhaité : PasswordTest, PasswordGen or PassphraseTest')
-    if len(sys.argv) == 1:
-        parser.print_help()
-        sys.exit(0)
+    # parser.add_argument('tool', type=str, help='Précisez l\'outil souhaité : PasswordTest, PasswordGen or PassphraseGen')
+    # if len(sys.argv) == 1:
+    #     parser.print_help()
+    #     sys.exit(0)
     args = parser.parse_args()
     return args
 
 
 args = get_args()
 #debug
-#args.tool = 'passwordTest'
+args.tool = 'PassphraseGen'
 
 match args.tool:
     case 'PasswordTest':
@@ -37,7 +38,9 @@ match args.tool:
         gen_pwd.get_entropy()
         gen_pwd.get_password_strength()
         
-    case 'PassphraseTest':
-        print('passphraseTest demandé')
+    case 'PassphraseGen':
+        Generated_passphrase = Passphrase()
+        print("La passphrase générée est : ", " ".join(Generated_passphrase.wordlist))
+
     case _:
-        print('Commande inconnue, merci de préciser l\'outil souhaité : PasswordTest, PasswordGen or PassphraseTest')
+        print('Commande inconnue, merci de préciser l\'outil souhaité : PasswordTest, PasswordGen or PassphraseGen')
