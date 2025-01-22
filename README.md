@@ -24,9 +24,9 @@ pip install requests
 **Exemple 1** - Mot de passe faible :  
 ```bash
 $ python main.py PasswordTest
+```
 saisissez un mot de passe à tester : abc123
 
 # Sortie :
-Le mot de passe est : abc123
-L'entropie du mot de passe est : 25.0
-La force du mot de passe est : Weak
+L'entropie du mot de passe est :  15.509775004326936
+La force du mot de passe est :  Very_weak
