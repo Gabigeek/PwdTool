@@ -17,3 +17,16 @@ Installez les dépendances avec :
 ```bash
 pip install requests
 ```
+## Exemples d'utilisation détaillés
+
+### 1. Tester un mot de passe existant (`PasswordTest`)
+
+**Exemple 1** - Mot de passe faible :  
+```bash
+$ python main.py PasswordTest
+saisissez un mot de passe à tester : abc123
+
+# Sortie :
+Le mot de passe est : abc123
+L'entropie du mot de passe est : 25.0
+La force du mot de passe est : Weak
